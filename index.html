@@ -16,7 +16,6 @@
             <br>
             <h4>Метрики шрифта, line-height и vertical-align</h4>
           </section>
-          <section data-background-image="https://media.giphy.com/media/MGmnFOZRFRo4w/giphy.gif"></section>
           <section>
             <h3>Тема не раскрыта</h3>
             <p>Мы работаем с этим, но совершенно не компетентны в этом вопросе</p>
@@ -40,14 +39,86 @@
             </section>
             <section>
               <img width="70%" src="http://blog.hydrock.ru/bl-content/uploads/222222222222.jpg" alt="">
-              <p>Gruppo - 136px</p>
+              <p>Gruppo - 97px</p>
             </section>
             <section>
               <img width="70%" src="http://blog.hydrock.ru/bl-content/uploads/3333333.jpg" alt="">
-              <p>Catamaran - 136px</p>
+              <p>Catamaran - 164px</p>
+            </section>
+          </section>
+
+          <section>
+            <section>
+              <h3>Все дело в символах</h3>
+              <p>Шрифт определяется его <b>em-квадратом</b> (или единицей em), в котором будет нарисован каждый символ.</p>
+            </section>
+            <section>
+              <img src="http://designwithfontforge.com/en-US/images/MetalTypeZoomIn.JPG" style="width: 80%;">
+              <p style="font-size: 20px;">"Полный" размер шрифта определяется его em-квадратом, своего рода контейнер, в котором будет нарисован каждый символ данного шрифта. Почему собственно em? EM это длинна заглавной буквы M в типографии, какой то базовый размер для блоков символов в печати. Относительно этого базового символа формируются остальные.</p>
+            </section>
+            <section>
+              <p style="font-size: 20px;">Настоящий размер расчитывается на основе характеристик шрифта - (ascender, descender, capital height, x-height и т.д.)</p>
+              <img style="width: 40%;" src="http://blog.hydrock.ru/bl-content/uploads/catamarangeneralinfo.jpg">
+              <img style="width: 40%;" src="http://blog.hydrock.ru/bl-content/uploads/catamaranos2info.jpg">
+            </section>
+            <section>
+              <p>Есть замечательный ресурс...</p>
+              <iframe width="100%" height="600px" src="https://www.supremo.tv/typeterms/"></iframe>
+            </section>
+          </section>
+
+          <section>
+            <section>
+              <p style="font-size: 20px;">Таким образом. Выставляя размер шрифта, на самом деле вы выставляете размер em квадрата. И уже на основе этого размера и внутренних характеристик шрифта, рисуется шрифт в веб браузере.</p>
+              <img src="http://tpverstak.ru/wp-content/uploads/2017/02/1-1.png">
+              <p style="font-size: 20px;">content-area - область где рисуется отдельный символ, вычесленная на основе размера em</p>
+            </section>
+            <section>
+              <h3>Погружаемся глубже</h3>
+              <p>Высота line-box основана на высоте его дочерних элементов, точнее на самом высоком элементе</p>
+              <img src="http://tpverstak.ru/wp-content/uploads/2017/02/2-1.png">
+            </section>
+            <section>
+              <h3>Отрисовка в браузере</h3>
+              <img style="width: 60%;" src="http://tpverstak.ru/wp-content/uploads/2017/02/3.png">
+              <p style="font-size: 20px;"><b>content-area</b> - определяется размером шрифта</p>
+              <p style="font-size: 20px;"><b>virtual-area</b> - это line-height, а так же это высота используемая для вычисления высоты line-box</p>
+              <p style="font-size: 20px;"><b>line-box</b> - линия inline элементов, высота которой вычесляется по самому высокому элементу внутри нее.</p>
+            </section>
+            <section>
+              <h3>line-height: 1</h3>
+              <img src="http://tpverstak.ru/wp-content/uploads/2017/02/6.png">
             </section>
           </section>
           <section>
+            <section>
+              <h3>vertical-align: важнейшее свойство</h3>
+              <img src="http://tpverstak.ru/wp-content/uploads/2017/02/7.png">
+            </section>
+            <section>
+              <h3>Больше чем возможно</h3>
+              <img src="http://tpverstak.ru/wp-content/uploads/2017/02/8.png">
+            </section>
+            <section>
+              <h3>Невидимый элемент</h3>
+              <img src="http://tpverstak.ru/wp-content/uploads/2017/02/9.png">
+              <p>Тег - родитель, имеет свой font-family</p>
+            </section>
+            <section>
+              <h3>Такое разное выравнивание</h3>
+              <img src="http://tpverstak.ru/wp-content/uploads/2017/02/10.png">
+            </section>
+            <section>
+              <h3>Будте осторожны</h3>
+              <p>vertical-align: top</p>
+              <img src="http://tpverstak.ru/wp-content/uploads/2017/02/11.png">
+            </section>
+          </section>
+          <section>
+            <section>
+              <h3>Выводы</h3>
+              
+            </section>
           </section>
 
       </div>
