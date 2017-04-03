@@ -63,62 +63,117 @@
             </section>
             <section>
               <p>Есть замечательный ресурс...</p>
-              <iframe width="100%" height="600px" src="https://www.supremo.tv/typeterms/"></iframe>
+              <iframe width="100%" height="500px" src="https://www.supremo.tv/typeterms/"></iframe>
             </section>
           </section>
 
           <section>
             <section>
               <p style="font-size: 20px;">Таким образом. Выставляя размер шрифта, на самом деле вы выставляете размер em квадрата. И уже на основе этого размера и внутренних характеристик шрифта, рисуется шрифт в веб браузере.</p>
-              <img src="http://tpverstak.ru/wp-content/uploads/2017/02/1-1.png">
+              <img src="https://iamvdo.me/content/01-blog/30-css-avance-metriques-des-fontes-line-height-et-vertical-align/upm-px-equivalent.png">
               <p style="font-size: 20px;">content-area - область где рисуется отдельный символ, вычесленная на основе размера em</p>
             </section>
             <section>
               <h3>Погружаемся глубже</h3>
               <p>Высота line-box основана на высоте его дочерних элементов, точнее на самом высоком элементе</p>
-              <img src="http://tpverstak.ru/wp-content/uploads/2017/02/2-1.png">
+              <img src="">
             </section>
             <section>
               <h3>Отрисовка в браузере</h3>
-              <img style="width: 60%;" src="http://tpverstak.ru/wp-content/uploads/2017/02/3.png">
+              <img style="width: 60%;" src="https://iamvdo.me/content/01-blog/30-css-avance-metriques-des-fontes-line-height-et-vertical-align/line-boxes.png">
               <p style="font-size: 20px;"><b>content-area</b> - определяется размером шрифта</p>
               <p style="font-size: 20px;"><b>virtual-area</b> - это line-height, а так же это высота используемая для вычисления высоты line-box</p>
               <p style="font-size: 20px;"><b>line-box</b> - линия inline элементов, высота которой вычесляется по самому высокому элементу внутри нее.</p>
             </section>
             <section>
               <h3>line-height: 1</h3>
-              <img src="http://tpverstak.ru/wp-content/uploads/2017/02/6.png">
+              <img src="https://iamvdo.me/content/01-blog/30-css-avance-metriques-des-fontes-line-height-et-vertical-align/line-height-1.png">
             </section>
           </section>
           <section>
             <section>
               <h3>vertical-align: важнейшее свойство</h3>
-              <img src="http://tpverstak.ru/wp-content/uploads/2017/02/7.png">
+              <img src="https://iamvdo.me/content/01-blog/30-css-avance-metriques-des-fontes-line-height-et-vertical-align/vertical-align-baseline.png">
             </section>
             <section>
               <h3>Больше чем возможно</h3>
-              <img src="http://tpverstak.ru/wp-content/uploads/2017/02/8.png">
+              <img src="https://iamvdo.me/content/01-blog/30-css-avance-metriques-des-fontes-line-height-et-vertical-align/vertical-align-baseline-nok.png">
             </section>
             <section>
               <h3>Невидимый элемент</h3>
-              <img src="http://tpverstak.ru/wp-content/uploads/2017/02/9.png">
+              <img src="https://iamvdo.me/content/01-blog/30-css-avance-metriques-des-fontes-line-height-et-vertical-align/vertical-align-strut.png">
               <p>Тег - родитель, имеет свой font-family</p>
             </section>
             <section>
               <h3>Такое разное выравнивание</h3>
-              <img src="http://tpverstak.ru/wp-content/uploads/2017/02/10.png">
+              <img src="https://iamvdo.me/content/01-blog/30-css-avance-metriques-des-fontes-line-height-et-vertical-align/vertical-align-top-bottom-text.png">
             </section>
             <section>
               <h3>Будте осторожны</h3>
               <p>vertical-align: top</p>
-              <img src="http://tpverstak.ru/wp-content/uploads/2017/02/11.png">
+              <img src="https://iamvdo.me/content/01-blog/30-css-avance-metriques-des-fontes-line-height-et-vertical-align/vertical-align-top-virtual-height.png">
             </section>
           </section>
           <section>
             <section>
               <h3>Выводы</h3>
-              
             </section>
+            <section>
+				<p>Указывая размер шрифта - задается базовый размер em квадрата</p>
+            </section>
+            <section>
+            	<p>Настоящие размеры шрифта расчитываются на основе величины em квадрата и характеристик шрифтов.</p>
+            </section>
+            <section>
+            	<p>Разные шрифты, при одинаковом font-size - могут иметь разную высоту.</p>
+            </section>
+            <section>
+            	<p>line-height: normal - вычисляется автоматически. line-height: 1 - равен em квадрату.</p>
+            </section>
+            <section>
+            	<p>Высота line-box может быть разной в зависимости от контента, line-height и даже вертикального выравнивания</p>
+            </section>
+            <section>
+            	<p>Все inline элементы имеют две высоты.</p>
+            	<ul>
+            		<li>
+            			content-area (основана на характеристиках шрифта)
+            		</li>
+            		<li>
+            			virtual-area (line-height)
+            		</li>
+            		<li>
+            			Ни один из этих параметров не может быть визуализирован в devTools
+            		</li>
+            	</ul>
+            </section>
+            <section>
+            	<p>vertical-align - неачевидное свойство.</p>
+            </section>
+          </section>
+          <section>
+          	<h3>Ссылки</h3>
+          	<ul>
+          		<ul>
+	          		<li>
+	          			Презентация основана на <a href="https://iamvdo.me/en/blog/css-font-metrics-line-height-and-vertical-align" target="_blank">статье</a>
+	          		</li>
+
+	          		<li>
+	          			Мой перевод <a href="http://blog.hydrock.ru/" target="_blank">статьи</a>
+	          		</li>
+	          		
+	          		<li>
+	          			Работа со шрифтами: <a href="https://fontforge.github.io/en-US/" target="_blank">FontForge</a>, <a href="http://opentype.js.org/font-inspector.html" target="_blank">opentype.js</a>
+	          		</li>
+	          		<li>
+	          			<a href="https://jsfiddle.net/054zq7an/10/embedded/result,html,css/dark/" target="_blank">Анатомия шрифта</a>
+	          		</li>
+          		</ul>
+          	</ul>
+          </section>
+          <section data-background-image="https://media.giphy.com/media/xZqycRHIQkKNa/giphy.gif" data-background-size="70%">
+          	<h3 style="background-color: black; display: inline-block; padding: 10px 20px; border-radius: 10px;">Спасибо!</h3>
           </section>
 
       </div>
